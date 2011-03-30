@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+ul.menusm { font-size:14px; line-height:14px;}
+
+
+/* DESIGN NAV1 (categories) */
+/* level 0 */
+#nav1 ul { margin:0 auto; width:970px;}
+#nav1 ul li { float:left;}
+#nav1 ul li a { }
+#nav1 ul li.current-cat { }							/* active item first level */
+#nav1 ul li.current-cat a,
+#nav1 ul li ul li a.a_hover_main { }				/* on hover */
+
+/* level 1 */
+#nav1 ul li ul { top:40px; left:0; width:140px;}				/* position of submenu */
+#nav1 ul li ul li { }
+#nav1 ul li ul li a { }
+#nav1 ul li ul li a.have_submenu { }																/* if item have submenu */
+#nav1 ul li ul li a:hover,
+#nav1 ul li ul li a.have_submenu_hover { }
+
+/* level 2 */
+#nav1 ul li ul li ul { top:0px; left:140px;}									/* position of sub-submenu */
+
+/* DO NOT EDIT!!! */
+ul.menusm { list-style:none;}
+ul.menusm li { cursor:pointer; position:relative; z-index:/*IE7*/999;}
+ul.menusm li a { position:relative; z-index:1000;}
+ul.menusm li ul { display:none; position:absolute; list-style:none; z-index:999;}
+ul.menusm li ul li ul { position:absolute; list-style:none;}

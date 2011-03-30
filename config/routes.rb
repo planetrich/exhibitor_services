@@ -1,4 +1,10 @@
 ExhibitorServices::Application.routes.draw do
+  get "events/listing"
+
+  get "events/travel"
+
+  get "events/faq"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
